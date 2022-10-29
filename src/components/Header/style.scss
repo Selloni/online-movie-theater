@@ -1,0 +1,94 @@
+body {
+    /* внешние отступы блока, создавая пространство
+     вокруг элементa, так */
+    margin: 0;
+    background-color:#080720;
+}
+.conteiner {
+    /* сдвиг сверху - справа и слева  */
+    margin: 5% 2%;
+    /* justify-content: space-between; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header-line {
+    /* отступ */
+    /* padding-top: 5px; */
+    /* выстоить элементы в линию */
+    display: flex;
+    /* выровнить элементы по центру */
+    align-items: center;
+    /* что бы у элементов было пространство */
+    justify-content: space-between;
+    margin: 0px 5%;
+    /* прозрачность */
+    /* opacity: .5; */  
+}
+
+.background-line-top {
+    /* закрепить объект */
+    position: sticky;
+    /* постоянное значение на верху */
+    top: 0;
+    background-color: #0000007d;
+    width: 100%;
+    height: 0%;
+    
+}
+
+.navigation-panel, .navigation-panel-no-delite {
+    color: #fff;
+    /* толщина */
+    font-weight: 700;
+    /* ширифт */
+    font-size: 16;
+    margin-right: 50px;
+    /* прозрачность */
+    opacity: 1; 
+    cursor: pointer;
+    /*** нету возможности выделять слова*/
+    -ms-user-select: none;
+    /*** Для мозилы*/
+    -moz-user-select: none;
+    /*** Для конкверора*/
+    -khtml-user-select: none;
+    /*** Для Сафари и Хрома*/
+    -webkit-user-select: none
+}
+
+@media (max-width: 970px) {
+
+    .navigation-panel {
+        display: none;
+    }
+}
+
+/* анимация на наведение */
+.navigation-panel:hover {
+    color:#4E3ABB
+}
+
+
+.find {
+    color: #fff;
+    border: 1px solid;
+    padding: .4%;
+    padding-left: 12px;
+    padding-right: 10%;
+    border-radius: 20px;
+}
+
+.button {
+    color: #fff;
+    background-color: #4E3ABB;
+    /* скругление углов */
+    border-radius: 18px;
+    /* со всех сторон отсупы */
+    padding: 7px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color:#4E3ABB; 
+}
