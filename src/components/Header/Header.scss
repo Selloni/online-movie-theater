@@ -4,12 +4,6 @@ body {
     margin: 0;
     background-color:#080720;
 }
-.conteiner {
-    /* сдвиг сверху - справа и слева  */
-    margin: 5% 2%;
-    /* justify-content: space-between; */
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 .header-line {
@@ -75,8 +69,23 @@ body {
     border: 1px solid;
     padding: .4%;
     padding-left: 12px;
-    padding-right: 10%;
+    padding-right: 7%;
     border-radius: 20px;
+    word-spacing: 5px;
+    cursor:default;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
+}
+
+.find:hover {
+    border-color: #4E3ABB;
+    box-shadow: 0 0 5px #4E3ABB ;
+    fill-opacity: 0.5; /* прозрачность заливки */
+    stroke: #4E3ABB; /* цвет обводки */
+    stroke-width: 8px; /* толщина обводки */
+    stroke-opacity: 0.8; /* прозрачность обводки */
 }
 
 .button {
@@ -86,6 +95,11 @@ body {
     border-radius: 18px;
     /* со всех сторон отсупы */
     padding: 7px;
+    cursor:pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
 }
 
 .button:hover {

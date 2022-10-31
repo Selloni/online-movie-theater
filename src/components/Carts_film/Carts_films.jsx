@@ -1,8 +1,7 @@
-import './style.scss';
+import './Carts.scss';
 
-function Carts_films() {
-  <div class="conteiner">
-    <h2 class="films">Популярно</h2>
+function Carts_films(props) {
+  return (
     <div class="section">
       <div class="cart-img">
         <img class="cart-img" src="../img/./img/avatar.jpg" />
@@ -24,7 +23,11 @@ function Carts_films() {
         <img class="cart-img" src="../img/arc.jpg" />
         <div>Название</div>
       </div>
+      <div class="cart-img">
+        <img class="cart-img" src="../img/arc.jpg" />
+        <div>Название</div>
+      </div>
     </div>
-  </div>;
+  );
 }
 export default Carts_films;

@@ -1,6 +1,9 @@
-import './style.scss';
+import './Header.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function HeadearLine() {
+  const find = <FontAwesomeIcon icon={faMagnifyingGlass} />;
   return (
     <div class="background-line-top">
       <div class="header-line">
@@ -11,7 +14,7 @@ function HeadearLine() {
           <a class="navigation-panel">Мультфильмы</a>
           <a class="navigation-panel">Аниме</a>
         </div>
-        <a class="find">Поиск</a>
+        <a class="find"> {find} Поиск</a>
         <a class="button">Login</a>
       </div>
     </div>

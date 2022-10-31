@@ -1,17 +1,13 @@
-.conteiner {
-    /* сдвиг сверху - справа и слева  */
-    margin: 5% 2%;
-    /* justify-content: space-between; */
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .section {
     color: #fff;
     DISPLAY: GRID;
     /* 6элементов занимает равное растояние */
-    GRID-TEMPLATE-COLUMNS: repeat(5, 1FR);
+    GRID-TEMPLATE-COLUMNS: repeat(6, 1FR);
     /* пробел иежду блоками */
     GRID-COLUMN-GAP: 3EM;
+    margin-bottom: 5%;
 }
 
 
