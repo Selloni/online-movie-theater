@@ -31,7 +31,7 @@ body {
     
 }
 
-.navigation-panel, .navigation-panel-no-delite {
+.navigation-panel, .navigation-panel-no-delite, .navigation-panel-activ {
     color: #fff;
     /* толщина */
     font-weight: 700;
@@ -60,6 +60,10 @@ body {
 
 /* анимация на наведение */
 .navigation-panel:hover {
+    color:#4E3ABB
+}
+
+.navigation-panel-activ {
     color:#4E3ABB
 }
 
