@@ -1,3 +1,8 @@
+$purpure: #4E3ABB;
+$color-white: white;
+
+
+
 body {
     /* внешние отступы блока, создавая пространство
      вокруг элементa, так */
@@ -27,12 +32,11 @@ body {
     top: 0;
     background-color: #0000007d;
     width: 100%;
-    height: 0%;
-    
+    height: 0%;  
 }
 
 .navigation-panel, .navigation-panel-no-delite, .navigation-panel-activ {
-    color: #fff;
+    color: $color-white;
     /* толщина */
     font-weight: 700;
     /* ширифт */
@@ -49,27 +53,78 @@ body {
     -khtml-user-select: none;
     /*** Для Сафари и Хрома*/
     -webkit-user-select: none
+  
 }
+
+// navigation-panel-no-delit{
+//     position: relative
+// }
 
 @media (max-width: 970px) {
 
     .navigation-panel {
         display: none;
     }
+
+    .burger {
+        content: '';
+        cursor: pointer;
+        position: absolute;
+        
+        left: 18%;
+        border-width: 2px 0px;
+        border-color: $color-white;
+        border-style: solid;
+        padding: 2px 12px;
+        
+        &:hover {
+            animation-name: burger-panel;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            transition: transform 1s ease-in-out;
+            // border-width: 0px 2px 2px 0px;
+            // border-style: solid;
+            // border-color: $color-white;
+            // padding: 6px 6px;
+            // transform: rotate(45deg);
+        }
+    }
 }
 
+
+
+@keyframes burger-panel {
+    0%{
+        content: '';
+        cursor: pointer;
+        border-width: 2px 0px;
+        border-color: $color-white;
+        border-style: solid;
+        padding: 2px 10px;
+    }
+    100%{
+        content: '';
+        cursor: pointer;
+        border-width: 0.5px 1px 2px 0px;
+        border-style: solid;
+        border-color: $color-white;
+        padding: 8px;
+        transform: rotate(45deg);
+    
+    }
+}
 /* анимация на наведение */
 .navigation-panel:hover {
-    color:#4E3ABB
+    color:$purpure
 }
 
 .navigation-panel-activ {
-    color:#4E3ABB
+    color:$purpure
 }
 
 
 .find {
-    color: #fff;
+    color: $color-white;
     border: 1px solid;
     padding: .4%;
     padding-left: 12px;
@@ -80,21 +135,21 @@ body {
     -ms-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
-    -webkit-user-select: none
+    -webkit-user-select: none;
+    &:hover{
+        border-color: $purpure;
+        box-shadow: 0 0 5px $purpure ;
+        fill-opacity: 0.5; /* прозрачность заливки */
+        stroke: $purpure; /* цвет обводки */
+        stroke-width: 8px; /* толщина обводки */
+        stroke-opacity: 0.8; /* прозрачность обводки */
+    }
 }
 
-.find:hover {
-    border-color: #4E3ABB;
-    box-shadow: 0 0 5px #4E3ABB ;
-    fill-opacity: 0.5; /* прозрачность заливки */
-    stroke: #4E3ABB; /* цвет обводки */
-    stroke-width: 8px; /* толщина обводки */
-    stroke-opacity: 0.8; /* прозрачность обводки */
-}
 
 .button {
-    color: #fff;
-    background-color: #4E3ABB;
+    color: $color-white;
+    background-color: $purpure;
     /* скругление углов */
     border-radius: 18px;
     /* со всех сторон отсупы */
@@ -107,6 +162,6 @@ body {
 }
 
 .button:hover {
-    background-color: #ffffff;
-    color:#4E3ABB; 
+    background-color: $color-white;
+    color:$purpure; 
 }
